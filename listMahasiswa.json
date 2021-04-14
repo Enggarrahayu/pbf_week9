@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "userId": 1,
+      "id": 1,
+      "nim": "1841720199",
+      "nama": "fauzan",
+      "alamat": "arab ",
+      "hp": "099",
+      "angkatan": "2018",
+      "status": "aktif"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "nim": "1841720199",
+      "nama": "udin",
+      "alamat": "canada",
+      "hp": "03141412",
+      "angkatan": "2019",
+      "status": "aktif"
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "nim": "1841720199",
+      "nama": "samsul",
+      "alamat": "sumawe",
+      "hp": "02",
+      "angkatan": "2018",
+      "status": "aktif"
+    }
+    
+   
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

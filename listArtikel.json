@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "userId": 1,
+      "id": 1618359703311,
+      "nim": "1841720008",
+      "nama": "Enggar Rahayu",
+      "alamat": "Tulungagung",
+      "hp": "085851150539",
+      "angkatan": "18",
+      "status": "Mahasiswa"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
