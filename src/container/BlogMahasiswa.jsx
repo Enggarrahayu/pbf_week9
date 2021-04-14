@@ -18,7 +18,6 @@ class BlogMahasiswa extends Component{
         }
     }
 
-    //FETCHING DENGAN URL
     ambilDataDariServerApiMahasiswaBlog = () => {
         API.getNewsBlog().then(result =>{
             this.setState({
@@ -31,7 +30,7 @@ class BlogMahasiswa extends Component{
         this.ambilDataDariServerApiMahasiswaBlog()
     }
 
-    //arrow function CREATE
+
     handleTambahMahasiswa = (event) =>{
         let forminsertMahasiswa = {...this.state.insertMahasiswa};
         let timestamp = new Date().getTime();
@@ -42,7 +41,7 @@ class BlogMahasiswa extends Component{
         });
     }
 
-    //arrow function SAVE
+
     handleTombolSimpan = () =>{
         API.postNewsBlog(this.state.insertMahasiswa)
         .then((response) => {
@@ -50,7 +49,6 @@ class BlogMahasiswa extends Component{
         })
     }
 
-    //arrow function DELETE
     handleHapusMahasiswa = (data) =>{
         API.deleteNewsBlog(data)
         .then((response) => {
@@ -62,7 +60,7 @@ class BlogMahasiswa extends Component{
         return(
             <div className="post-mahasiswa">
             <div className="from pb-2 border bottom">
-                <div className="from-group now">
+                <div className="from-group row">
                     <label htmlFor="nim" className="col-sm2 col-form-label">NIM</label>
                     <div className="col-sm-10">
                         <input type="text" className="form-control" id="nim" name="nim" onChange={this.handleTambahMahasiswa}/>
