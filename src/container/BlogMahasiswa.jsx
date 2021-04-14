@@ -58,54 +58,65 @@ class BlogMahasiswa extends Component{
 
     render(){
         return(
+            
             <div className="post-mahasiswa">
+                <h2  style={{textAlign: "center"}}>Student Form</h2> <br/>
             <div className="from pb-2 border bottom">
+                
+
                 <div className="from-group row">
+                    <label htmlFor="nama" className="col-sm-2 col-form-label">Student Name</label>
+                    <div className="col-sm-10">
+                    <input type="text" className="form-control" id="nama" name="nama" onChange={this.handleTambahMahasiswa}/>
+                    </div>
+                </div> <br/>
+
+                <div className="from-group row">
+                    <label htmlFor="nim" className="col-sm-2 col-form-label">NIM</label>
+                    <div className="col-sm-10">
+                    <input type="text" className="form-control" id="nim" name="nim" onChange={this.handleTambahMahasiswa}/>
+                    </div>
+                </div> <br/>
+
+                {/* <div className="from-group row">
                     <label htmlFor="nim" className="col-sm2 col-form-label">NIM</label>
                     <div className="col-sm-10">
                         <input type="text" className="form-control" id="nim" name="nim" onChange={this.handleTambahMahasiswa}/>
                     </div>
-                </div>
-
-                <div className="from-group row">
-                    <label htmlFor="nama" className="col-sm-2 col-form-label">Nama Mahasiswa</label>
-                    <div className="col-sm-10">
-                    <input type="text" className="form-control" id="nama" name="nama" onChange={this.handleTambahMahasiswa}/>
-                    </div>
-                </div>
+                </div> <br/> */}
                 
                 <div className="from-group row">
-                    <label htmlFor="alamat" className="col-sm-2 col-form-label">Alamat</label>
+                    <label htmlFor="alamat" className="col-sm-2 col-form-label">Address</label>
                     <div className="col-sm-10">
                     <input type="text" className="form-control" id="alamat" name="alamat" onChange={this.handleTambahMahasiswa}/>
                     </div>
-                </div>
+                </div> <br />
                 
                 <div className="from-group row">
-                    <label htmlFor="hp" className="col-sm-2 col-form-label">Hp</label>
+                    <label htmlFor="hp" className="col-sm-2 col-form-label">Phone Number</label>
                     <div className="col-sm-10">
                     <input type="text" className="form-control" id="hp" name="hp" onChange={this.handleTambahMahasiswa}/>
                     </div>
-                </div>
+                </div> <br />
 
                 <div className="from-group row">
-                    <label htmlFor="angkatan" className="col-sm-2 col-form-label">Angkatan</label>
+                    <label htmlFor="angkatan" className="col-sm-2 col-form-label">Generation</label>
                     <div className="col-sm-10">
                     <input type="text" className="form-control" id="angkatan" name="angkatan" onChange={this.handleTambahMahasiswa}/>
                     </div>
-                </div>
+                </div><br />
                 
                 <div className="from-group row">
                     <label htmlFor="status" className="col-sm-2 col-form-label">Status</label>
                     <div className="col-sm-10">
                     <input type="text" className="form-control" id="status" name="status" onChange={this.handleTambahMahasiswa}/>
                     </div>
-                </div>
+                </div> <br />
                 
-                 <button type="submit" className="btn btn-primary" onClick={this.handleTombolSimpan}>Simpan</button>
+                 <button type="submit" className="btn btn-primary" onClick={this.handleTombolSimpan}>Save</button>
 
             </div>
-            <h2>Daftar Mahasiswa</h2>
+            <h2 style={{textAlign: "center"}}>Student List</h2>
            {
                this.state.listMahasiswa.map(mahasiswa =>{
                    return <Post key={mahasiswa.id} 
